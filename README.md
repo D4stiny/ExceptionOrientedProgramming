@@ -19,8 +19,8 @@ Execute just-in-time code by abusing existing memory regions. See the article be
 3. codesign
 
 #### Build instructions
-1. Create and enter a build directory at the root directory of the project (mkdir build && cd build).
-2. Configure the project using cmake (cmake -S ../ -B .).
-3. Build the project (make).
-4. Use codesign to sign the built binary "ExceptionOrientedProgramming" with the hardened runtime (codesign --force --options runtime --sign "[your certificate]" ./ExceptionOrientedProgramming).
+1. Create and enter a build directory at the root directory of the project (`mkdir build && cd build`).
+2. Configure the project using cmake (`cmake -S ../ -B .`).
+3. Build the project (`make`).
+4. Use codesign to sign the built binary "ExceptionOrientedProgramming" with the hardened runtime (`codesign --force --options runtime --sign "[your certificate]" ./ExceptionOrientedProgramming`).
 5. Execute the "ExceptionOrientedProgramming" and check that the expected result of "7" is returned.
